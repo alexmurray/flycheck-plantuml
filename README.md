@@ -20,10 +20,9 @@ will be via [MELPA](http://melpa.org) - then you can just
 To enable then simply add the following to your init file:
 
 ```emacs-lisp
-(eval-after-load 'flycheck
-  '(progn
-     (require 'flycheck-plantuml)
-     (flycheck-plantuml-setup)))
+(with-eval-after-load 'flycheck
+  (require 'flycheck-plantuml)
+  (flycheck-plantuml-setup))
 ```
 
 ### Manual

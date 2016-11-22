@@ -30,10 +30,9 @@
 
 ;;;; Setup
 
-;; (eval-after-load 'flycheck
-;;   '(progn
-;;      (require 'flycheck-plantuml)
-;;      (flycheck-plantuml-setup)))
+;; (with-eval-after-load 'flycheck
+;;   (require 'flycheck-plantuml)
+;;   (flycheck-plantuml-setup))
 
 ;;; Code:
 (require 'flycheck)
