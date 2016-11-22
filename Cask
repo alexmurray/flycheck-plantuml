@@ -5,4 +5,4 @@
 
 (development
  (depends-on "flycheck")
- (depends-on "plantuml-mode")")
+ (depends-on "plantuml-mode"))
