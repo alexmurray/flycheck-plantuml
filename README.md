@@ -4,17 +4,18 @@
 [![MELPA](http://melpa.org/packages/flycheck-plantuml-badge.svg)](http://melpa.org/#/flycheck-plantuml)
 [![Build Status](https://travis-ci.org/alexmurray/flycheck-plantuml.svg?branch=master)](https://travis-ci.org/alexmurray/flycheck-plantuml)
 
-Integrate [plantuml](http://plantuml.com) with
-[flycheck](http://www.flycheck.org) to automatically check the
-syntax of your plantuml files on the fly.
+Integrate [plantuml](http://plantuml.com)
+(via [plantuml-mode](https://github.com/skuro/plantuml-mode))
+with [flycheck](http://www.flycheck.org) to automatically check the syntax of
+your plantuml files on the fly.
 
 ## Installation
 
 ### MELPA
 
-The preferred way to install `flycheck-plantuml` is via
-[MELPA](http://melpa.org) - then you can just <kbd>M-x package-install RET
-flycheck-plantuml RET</kbd>
+Once `flycheck-plantuml` is available via MELPA the preferred way to install
+will be via [MELPA](http://melpa.org) - then you can just
+<kbd>M-x package-install RET flycheck-plantuml RET</kbd>
 
 To enable then simply add the following to your init file:
 
@@ -36,8 +37,8 @@ this:
 (flycheck-plantuml-setup)
 ```
 
-NOTE: This will also require the manual installation of `flycheck` if you have
-not done so already.
+NOTE: This will also require the manual installation of `flycheck` and
+`plantuml-mode` if you have not done so already.
 
 ## License
 
