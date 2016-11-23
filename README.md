@@ -13,9 +13,9 @@ your plantuml files on the fly.
 
 ### MELPA
 
-Once `flycheck-plantuml` is available via MELPA the preferred way to install
-will be via [MELPA](http://melpa.org) - then you can just
-<kbd>M-x package-install RET flycheck-plantuml RET</kbd>
+The preferred way to install `flycheck-plantuml` is
+via [MELPA](http://melpa.org) - then you can just <kbd>M-x package-install RET
+flycheck-plantuml RET</kbd>
 
 To enable then simply add the following to your init file:
 
