@@ -42,10 +42,9 @@
   "A checker using plantuml.
 
 See `http://plantuml.com"
-  :command ("java" "-Djava.awt.headless=true" "-jar" (eval plantuml-jar-path)
-            "-checkonly" "-failfast2" source)
-  :error-patterns ((error line-start (message (minimal-match (one-or-more not-newline)))
-                          " line " line " in file: " (file-name) line-end))
+  :command ("java" "-Djava.awt.headless=true" "-jar" (eval plantuml-jar-path) "-syntax")
+  :standard-input t
+  :error-patterns ((error line-start "ERROR" "\n" line "\n" (message) line-end))
   :modes plantuml-mode)
 
 ;;;###autoload
